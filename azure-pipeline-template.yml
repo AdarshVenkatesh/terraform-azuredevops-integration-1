@@ -85,7 +85,7 @@ steps:
   displayName: 'Terraform Plan'
   inputs:
     workingDirectory:  '$(Pipeline.Workspace)/${{ parameters.workingDirectory }}'
-    azureSubscription: terraform-int
+    azureSubscription: Visual Studio Enterprise Subscription
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
