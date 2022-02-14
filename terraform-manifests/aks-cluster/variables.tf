@@ -23,8 +23,8 @@ variable aks {
   description = "AKS properties"
   type = map
   default = {
-    resource_group  = "default-value",
-    cluster_name    = "default-value",
+    resource_group  = "adarsh_test_rg",
+    cluster_name    = "adarsh_test_aks_cluster",
     node_pool_name  = "agentpool",
     type            = "VirtualMachineScaleSets"
     identity_type   = "SystemAssigned",
@@ -99,7 +99,7 @@ variable "rm-customers-api-deployment" {
 
 variable "proj_id" {
   description = "Identifier postfix for various resources"
-  default = "default-value"
+  default = "adarsh_test_proj_id"
 }
 
 ##############################################################################################################
