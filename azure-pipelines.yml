@@ -3,7 +3,7 @@ trigger:
 - none
 
 variables:
-  aadGroupId: 'groupId'
+  aadGroupId: 'fadfb1b9-7e70-42af-ad49-fbfbff0dd42d'
 
 pool:
   vmImage: ubuntu-latest
@@ -35,10 +35,10 @@ stages:
               location: 'westus2'
               workingDirectory: 'terraform-manifests/aks-shared-resources'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
-              backendAzureRmStorageAccountName: 'terraformstate12'
+              backendAzureRmStorageAccountName: 'terraformstate13'
               backendAzureRmContainerName: 'tfstatefiles'
               backendAzureRmKey: 'terraform.common.tfstate'
-              keyVaultName: 'terraform-integration-1'
+              keyVaultName: 'terraform-integration-2'
               storageSecretKey: 'terraform-storage-key'
               jsonfileName: 'common.json'
               isCommonResourceDeployment: 'true'
@@ -62,10 +62,10 @@ stages:
               location: 'westus2'
               workingDirectory: 'terraform-manifests/aks-cluster'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
-              backendAzureRmStorageAccountName: 'terraformstate12'
+              backendAzureRmStorageAccountName: 'terraformstate13'
               backendAzureRmContainerName: 'tfstatefiles'
               backendAzureRmKey: 'terraform.westus2.tfstate'
-              keyVaultName: 'terraform-integration-1'
+              keyVaultName: 'terraform-integration-2'
               keyVaultRg: 'terraform-storage-rg'
               storageSecretKey: 'terraform-storage-key'
               jsonfileName: 'westus2k8s.json'
@@ -89,10 +89,10 @@ stages:
               location: 'eastus2'
               workingDirectory: 'terraform-manifests/aks-cluster'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
-              backendAzureRmStorageAccountName: 'terraformstate12'
+              backendAzureRmStorageAccountName: 'terraformstate13'
               backendAzureRmContainerName: 'tfstatefiles'
               backendAzureRmKey: 'terraform.eastus2.tfstate'
-              keyVaultName: 'terraform-integration-1'
+              keyVaultName: 'terraform-integration-2'
               keyVaultRg: 'terraform-storage-rg'
               storageSecretKey: 'terraform-storage-key'
               jsonfileName: 'eastus2k8s.json'
