@@ -15,7 +15,7 @@ variable "environment" {
 }
 variable "log_analytics_workspace_name" {
   description = "Log analytics workspace name"
-  default = "default-value"
+  default = "adarsh_test_log_analytics"
 }
 
 # refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing 
@@ -25,7 +25,7 @@ variable "log_analytics_workspace_sku" {
 
 variable "application_insights_name" {
   description = "Application insights name"
-  default = "default-value"
+  default = "adarsh_test_app_insights"
 }
 
 variable "resourcegroup_location" {
@@ -39,12 +39,12 @@ variable "resourcegroup_location" {
 
 variable "acr_prefix" {
   description = "ACR name"
-  default = "default-value"
+  default = "adarsh_test_acr_prefix"
 }
 
 variable "proj_id" {
   description = "Identifier postfix for various resources"
-  default = "default-value"
+  default = "adarsh_test_proj_id"
 }
 
 ##############################################################################################################
