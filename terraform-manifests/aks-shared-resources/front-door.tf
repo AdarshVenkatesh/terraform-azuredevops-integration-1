@@ -2,7 +2,7 @@
 # RESOURCES - (front-door)
 ##############################################################################################################
 
-resource "azurerm-frontdoor" "frontDoor" {
+resource "azurerm_frontdoor" "frontDoor" {
   name                                         = local.frontdoor_name
   resource_group_name                          = azurerm_resource_group.k8s_rg.name
   enforce_backend_pools_certificate_name_check = false
