@@ -39,7 +39,7 @@ variable "resourcegroup_location" {
 
 variable "acr_prefix" {
   description = "ACR name"
-  default = "adarshtestacrprefix"
+  default = "testacr"
 }
 
 variable "proj_id" {
