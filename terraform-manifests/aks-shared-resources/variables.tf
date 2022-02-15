@@ -25,7 +25,7 @@ variable "log_analytics_workspace_sku" {
 
 variable "application_insights_name" {
   description = "Application insights name"
-  default = "adarsh_test_app_insights"
+  default = "adarsh-test-app-insights"
 }
 
 variable "resourcegroup_location" {
@@ -39,12 +39,12 @@ variable "resourcegroup_location" {
 
 variable "acr_prefix" {
   description = "ACR name"
-  default = "adarsh_test_acr_prefix"
+  default = "adarsh-test-acr-prefix"
 }
 
 variable "proj_id" {
   description = "Identifier postfix for various resources"
-  default = "adarsh_test_proj_id"
+  default = "adarsh-test-proj-id"
 }
 
 ##############################################################################################################
