@@ -99,7 +99,7 @@ variable "rm-customers-api-deployment" {
 
 variable "proj_id" {
   description = "Identifier postfix for various resources"
-  default = "adarsh-test-proj-id"
+  default = "adarshtestprojid"
 }
 
 ##############################################################################################################
