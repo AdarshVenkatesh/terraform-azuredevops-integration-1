@@ -31,7 +31,7 @@ stages:
           steps:
           - template: azure-pipeline-template.yml
             parameters:
-              environment: 'uat'
+              environment: 'sit'
               location: 'westus2'
               workingDirectory: 'terraform-manifests/aks-shared-resources'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
@@ -58,7 +58,7 @@ stages:
           steps:
           - template: azure-pipeline-template.yml
             parameters:
-              environment: 'uat'
+              environment: 'sit'
               location: 'westus2'
               workingDirectory: 'terraform-manifests/aks-cluster'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
@@ -85,7 +85,7 @@ stages:
           steps:
           - template: azure-pipeline-template.yml
             parameters:
-              environment: 'uat'
+              environment: 'sit'
               location: 'eastus2'
               workingDirectory: 'terraform-manifests/aks-cluster'
               backendAzureRmResourceGroupName: 'terraform-storage-rg'
