@@ -57,6 +57,14 @@ variable "min_node_count" {
   }
 }
 
+variable "aks_version" {
+  type = map(string)
+  default = {
+    sit   = "1.20.13"
+    prod  = "1.20.15"
+  }
+}
+
 variable "aks_location" {
   description = "AKS location"
   #default = "westus2"
