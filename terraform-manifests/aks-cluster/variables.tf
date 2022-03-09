@@ -30,7 +30,6 @@ variable aks {
     identity_type   = "SystemAssigned",
     lb_sku          = "Standard",
     network_plugin  = "kubenet"
-    version         = (local.environment == "sit" ? "1:20:13" : "1.20.15")
   }
 }
 
