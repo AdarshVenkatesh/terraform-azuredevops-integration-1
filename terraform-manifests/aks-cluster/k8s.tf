@@ -7,7 +7,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   location            = var.aks_location
   resource_group_name = local.resource_group_name
   dns_prefix          = "${local.aks_name}-${var.aks_location}"
-  kubernetes_version  = var.aks.version
+  kubernetes_version  = ("${local.environment}" == "sit" ? "1.20.13" : "1.20.15")
   node_resource_group = "MC_${local.resource_group_name}-${var.aks_location}"
 
   default_node_pool {
